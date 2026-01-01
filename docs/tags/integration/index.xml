@@ -7,5 +7,41 @@
     <generator>Hugo -- 0.153.3</generator>
     <language>en</language>
     <atom:link href="https://lishehao-ctrl.github.io/tags/integration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Issues to DingTalk</title>
+      <link>https://lishehao-ctrl.github.io/projects/github-issues-to-dingtalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/projects/github-issues-to-dingtalk/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;A lightweight automation tool that synchronizes GitHub Issues activity to
+DingTalk, enabling teams to receive real-time updates without constantly
+monitoring GitHub.&lt;/p&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;In cross-platform teams, important issue updates are often missed due to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Notification overload&lt;/li&gt;
+&lt;li&gt;Context switching between tools&lt;/li&gt;
+&lt;li&gt;Delayed manual checking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;This project bridges GitHub Issues and DingTalk by automatically forwarding
+issue events to DingTalk, ensuring that key updates are visible to the entire team.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic issue event forwarding&lt;/li&gt;
+&lt;li&gt;Near real-time notifications&lt;/li&gt;
+&lt;li&gt;Simple configuration and deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;use-cases&#34;&gt;Use Cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Team issue tracking&lt;/li&gt;
+&lt;li&gt;Project status monitoring&lt;/li&gt;
+&lt;li&gt;Faster response to critical updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/lishehao-ctrl/github-issues-to-dingtalk&#34;&gt;https://github.com/lishehao-ctrl/github-issues-to-dingtalk&lt;/a&gt; (coming soon)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

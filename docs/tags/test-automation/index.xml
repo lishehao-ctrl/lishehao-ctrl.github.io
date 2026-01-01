@@ -6,6 +6,35 @@
     <description>Recent content in Test Automation on </description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lishehao-ctrl.github.io/tags/test-automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://lishehao-ctrl.github.io/about/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/about/</guid>
+      <description>Background, focus areas, and links for Shehao Li.</description>
+    </item>
+    <item>
+      <title>Auto Load-Off Test</title>
+      <link>https://lishehao-ctrl.github.io/projects/auto-load-off-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/projects/auto-load-off-test/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Auto Load-Off Test is a Python-based hardware test automation tool designed to
+replace repetitive manual load-off testing workflows in lab environments.&lt;/p&gt;
+&lt;p&gt;The system automates signal generation, measurement, data logging, and result
+visualization, significantly improving test efficiency and consistency.&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Manual load-off testing requires repeated configuration of test instruments,
+data recording, and plotting, which is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Time-consuming&lt;/li&gt;
+&lt;li&gt;Error-prone&lt;/li&gt;
+&lt;li&gt;Hard to reproduce consistently&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;I designed and implemented an end-to-end automated testing pipeline that:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

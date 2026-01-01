@@ -18,7 +18,6 @@
 <link rel="mask-icon" href="https://lishehao-ctrl.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://lishehao-ctrl.github.io/projects/mail-to-dingtalk-todo/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://lishehao-ctrl.github.io/projects/mail-to-dingtalk-todo/">
 <noscript>
     <style>
@@ -75,10 +74,17 @@
   <meta property="og:title" content="DingTalk To-Do Creator from Email">
   <meta property="og:description" content="Polls an IMAP inbox, parses ECO workflow emails, creates DingTalk To-Do tasks, and ensures idempotency.">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-12-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-31T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="IMAP">
+    <meta property="article:tag" content="DingTalk">
+    <meta property="article:tag" content="Automation">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DingTalk To-Do Creator from Email">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="Polls an IMAP inbox, parses ECO workflow emails, creates DingTalk To-Do tasks, and ensures idempotency.">
 
 
 <script type="application/ld+json">
@@ -101,8 +107,37 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DingTalk To-Do Creator from Email",
+  "name": "DingTalk To-Do Creator from Email",
+  "description": "Polls an IMAP inbox, parses ECO workflow emails, creates DingTalk To-Do tasks, and ensures idempotency.",
+  "keywords": [
+    "Python", "IMAP", "DingTalk", "Automation"
+  ],
+  "articleBody": "Overview DingTalk To-Do Creator from Email is a Python utility that reads emails from an IMAP inbox, extracts a small set of ECO-related fields from matching messages, creates DingTalk To-Do tasks for configured assignees, and stores processed Message-IDs in a local JSON file to prevent duplicate task creation.\nProblem ECO workflow emails often require follow-up actions, but manually converting qualifying emails into DingTalk To-Do items is repetitive and easy to duplicate when the mailbox is scanned repeatedly or when runs overlap.\nSolution This project implements a small automation pipeline that:\nPulls recent emails from IMAP within a bounded date window Filters messages by subject keyword and Message-ID deduplication Extracts required ECO fields from the message body Creates DingTalk To-Do tasks for configured recipients Persists processed state locally to keep runs idempotent Architecture IMAP fetch layer (inbox.safe_get) Connects via imaplib.IMAP4_SSL Uses SINCE / BEFORE search window Retries up to 3 times with exponential backoff Parsing + filtering (mailparser) Parses raw bytes into EmailMessage Filters by required subject keyword and processed Message-ID state Extracts body fields via regex from text/plain or text/html (HTML is converted to text via BeautifulSoup) DingTalk integration (dingtalk) Retrieves app access token via Alibaba Cloud DingTalk OAuth2 SDK Resolves userId -\u003e unionId via DingTalk OpenAPI Creates To-Do tasks via Alibaba Cloud DingTalk To-Do SDK (single retry to reduce transient failures) Local state (state) Reads/writes processed_messages.json (created if missing/invalid) Configuration (.env, config/dingtalk_recipients.json) Secrets and recipient lists are not tracked; example templates are provided Tech Stack Python IMAP (imaplib over SSL) Email parsing (Python email package) Requests (DingTalk OpenAPI calls) BeautifulSoup4 (HTML-to-text) python-dateutil (relative time offsets) python-dotenv (environment config) Alibaba Cloud DingTalk SDKs: OAuth2 (alibabacloud-dingtalk) To-Do API (alibabacloud-dingtalk) Impact Reduces repeated manual work by generating DingTalk To-Dos directly from qualifying emails. Prevents duplicate task creation across repeated inbox scans via Message-ID tracking. Centralizes configuration and validates required inputs early to avoid silent failures. Links GitHub: https://github.com/lishehao-ctrl/mail-to-dingtalk-todo ",
+  "wordCount" : "316",
+  "inLanguage": "en",
+  "datePublished": "2025-12-31T00:00:00Z",
+  "dateModified": "2025-12-31T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lishehao-ctrl.github.io/projects/mail-to-dingtalk-todo/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lishehao-ctrl.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -133,13 +168,19 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    DingTalk To-Do Creator from Email
-  </h1>
-</header>
-<div class="post-content"><h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      DingTalk To-Do Creator from Email
+    </h1>
+    <div class="post-meta"><span title='2025-12-31 00:00:00 +0000 UTC'>December 31, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
 <p>DingTalk To-Do Creator from Email is a Python utility that reads emails from an IMAP inbox, extracts a small set of ECO-related fields from matching messages, creates DingTalk To-Do tasks for configured assignees, and stores processed Message-IDs in a local JSON file to prevent duplicate task creation.</p>
 <h2 id="problem">Problem<a hidden class="anchor" aria-hidden="true" href="#problem">#</a></h2>
 <p>ECO workflow emails often require follow-up actions, but manually converting qualifying emails into DingTalk To-Do items is repetitive and easy to duplicate when the mailbox is scanned repeatedly or when runs overlap.</p>
@@ -214,7 +255,17 @@
 </ul>
 
 
-</div>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://lishehao-ctrl.github.io/tags/python/">Python</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/imap/">IMAP</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/dingtalk/">DingTalk</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/automation/">Automation</a></li>
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

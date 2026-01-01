@@ -28,7 +28,6 @@ This project implements a minimal automation pipeline that:">
 <link rel="mask-icon" href="https://lishehao-ctrl.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://lishehao-ctrl.github.io/projects/test-automation-multitimer/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://lishehao-ctrl.github.io/projects/test-automation-multitimer/">
 <noscript>
     <style>
@@ -87,10 +86,27 @@ This project implements a minimal automation pipeline that:">
 Problem Manually converting qualifying ECO workflow emails into DingTalk To-Do tasks is repetitive and commonly leads to:
 Duplicate task creation across repeated mailbox scans Missed follow-ups when emails arrive in bursts Inconsistent extraction of key fields from email bodies Solution This project implements a minimal automation pipeline that:">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="IMAP">
+    <meta property="article:tag" content="Email Parsing">
+    <meta property="article:tag" content="DingTalk">
+    <meta property="article:tag" content="OAuth2">
+    <meta property="article:tag" content="AlibabaCloud SDK">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DingTalk To-Do Creator from Email">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="Overview
+DingTalk To-Do Creator from Email polls an IMAP inbox, filters business emails by subject and date rules, extracts a small set of ECO fields from the message body, creates DingTalk To-Do tasks for configured recipients, and records processed Message-IDs in a local JSON file to keep runs idempotent.
+Problem
+Manually converting qualifying ECO workflow emails into DingTalk To-Do tasks is repetitive and commonly leads to:
+
+Duplicate task creation across repeated mailbox scans
+Missed follow-ups when emails arrive in bursts
+Inconsistent extraction of key fields from email bodies
+
+Solution
+This project implements a minimal automation pipeline that:">
 
 
 <script type="application/ld+json">
@@ -113,8 +129,37 @@ Duplicate task creation across repeated mailbox scans Missed follow-ups when ema
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DingTalk To-Do Creator from Email",
+  "name": "DingTalk To-Do Creator from Email",
+  "description": "Overview DingTalk To-Do Creator from Email polls an IMAP inbox, filters business emails by subject and date rules, extracts a small set of ECO fields from the message body, creates DingTalk To-Do tasks for configured recipients, and records processed Message-IDs in a local JSON file to keep runs idempotent.\nProblem Manually converting qualifying ECO workflow emails into DingTalk To-Do tasks is repetitive and commonly leads to:\nDuplicate task creation across repeated mailbox scans Missed follow-ups when emails arrive in bursts Inconsistent extraction of key fields from email bodies Solution This project implements a minimal automation pipeline that:\n",
+  "keywords": [
+    "Python", "IMAP", "Email Parsing", "DingTalk", "OAuth2", "AlibabaCloud SDK", "dotenv", "JSON"
+  ],
+  "articleBody": "Overview DingTalk To-Do Creator from Email polls an IMAP inbox, filters business emails by subject and date rules, extracts a small set of ECO fields from the message body, creates DingTalk To-Do tasks for configured recipients, and records processed Message-IDs in a local JSON file to keep runs idempotent.\nProblem Manually converting qualifying ECO workflow emails into DingTalk To-Do tasks is repetitive and commonly leads to:\nDuplicate task creation across repeated mailbox scans Missed follow-ups when emails arrive in bursts Inconsistent extraction of key fields from email bodies Solution This project implements a minimal automation pipeline that:\nConnects to an IMAP mailbox over SSL and fetches recent emails within a bounded date window Deduplicates using Message-ID persisted in processed_messages.json Filters by a required subject keyword (ECO审批流程) and “creation date” (sent date + configured offsets) not being in the future Extracts fields from the email body using regex: ecn编码, ecn名称, 产品名称, 工作负责人 Creates a DingTalk To-Do per configured recipient Sends a separate error To-Do to a configured error recipient list if the script fails Architecture main.py Orchestrates fetch → parse/filter → extract → create To-Do → persist state inbox.py safe_get() IMAP fetch with SSL and up to 3 retries (exponential backoff) Uses SINCE/BEFORE date search with a configurable search window (mapping_search_window) mailparser.py Parses raw bytes into EmailMessage Applies filtering rules (dedup, subject keyword, date constraints) Extracts header fields and body fields (text/plain or text/html → text via BeautifulSoup) dingtalk.py Fetches app access_token via DingTalk OAuth2 SDK (appKey/appSecret) Resolves userId -\u003e unionId via topapi/v2/user/get Creates To-Do tasks via DingTalk To-Do SDK; retries once on failure state.py Reads/writes processed_messages.json (creates empty state if missing/invalid) Uses a relative-path helper to work in normal execution and frozen builds mapping.py + dingtalk_recipients.py Loads env/config and validates required inputs early (.env, config/dingtalk_recipients.json) Known code issue (as-is in the current sources):\nIn dingtalk.py, the nested cal_due_time() is defined without parameters but is called with an argument when building the To-Do request, which will raise a TypeError unless corrected. Tech Stack Python IMAP over SSL (imaplib, ssl) Email parsing (email, BytesParser, parsedate_to_datetime) HTML-to-text (beautifulsoup4) Time offsets (python-dateutil / relativedelta) Config loading (python-dotenv) DingTalk integration: alibabacloud-dingtalk (OAuth2 + To-Do API) requests (user lookup endpoint) Impact Automates creation of DingTalk To-Dos from qualifying emails. Prevents duplicate processing via persisted Message-ID state. Centralizes configuration and fails fast on missing/invalid inputs. Links GitHub: https://github.com/lishehao-ctrl/test-automation-multitimer ",
+  "wordCount" : "391",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lishehao-ctrl.github.io/projects/test-automation-multitimer/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lishehao-ctrl.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -145,13 +190,19 @@ Duplicate task creation across repeated mailbox scans Missed follow-ups when ema
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    DingTalk To-Do Creator from Email
-  </h1>
-</header>
-<div class="post-content"><h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      DingTalk To-Do Creator from Email
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
 <p>DingTalk To-Do Creator from Email polls an IMAP inbox, filters business emails by subject and date rules, extracts a small set of ECO fields from the message body, creates DingTalk To-Do tasks for configured recipients, and records processed <code>Message-ID</code>s in a local JSON file to keep runs idempotent.</p>
 <h2 id="problem">Problem<a hidden class="anchor" aria-hidden="true" href="#problem">#</a></h2>
 <p>Manually converting qualifying ECO workflow emails into DingTalk To-Do tasks is repetitive and commonly leads to:</p>
@@ -244,7 +295,21 @@ Duplicate task creation across repeated mailbox scans Missed follow-ups when ema
 </ul>
 
 
-</div>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://lishehao-ctrl.github.io/tags/python/">Python</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/imap/">IMAP</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/email-parsing/">Email Parsing</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/dingtalk/">DingTalk</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/oauth2/">OAuth2</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/alibabacloud-sdk/">AlibabaCloud SDK</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/dotenv/">Dotenv</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/json/">JSON</a></li>
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

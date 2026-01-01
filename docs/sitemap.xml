@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lishehao-ctrl.github.io/</loc>
-    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/about/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/machine-learning/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/profile/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/test-automation/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/ucsd/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lishehao-ctrl.github.io/projects/</loc>
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
@@ -22,11 +40,6 @@
   </url><url>
     <loc>https://lishehao-ctrl.github.io/tags/python/</loc>
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lishehao-ctrl.github.io/tags/</loc>
-    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lishehao-ctrl.github.io/about/</loc>
   </url><url>
     <loc>https://lishehao-ctrl.github.io/tags/alibabacloud-sdk/</loc>
   </url><url>
@@ -53,7 +66,5 @@
     <loc>https://lishehao-ctrl.github.io/tags/oauth2/</loc>
   </url><url>
     <loc>https://lishehao-ctrl.github.io/tags/scpi/</loc>
-  </url><url>
-    <loc>https://lishehao-ctrl.github.io/tags/test-automation/</loc>
   </url>
 </urlset>

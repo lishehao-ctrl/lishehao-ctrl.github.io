@@ -6,7 +6,88 @@
     <description>Recent content on </description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lishehao-ctrl.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DingTalk To-Do Creator from Email</title>
+      <link>https://lishehao-ctrl.github.io/projects/mail-to-dingtalk-todo/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/projects/mail-to-dingtalk-todo/</guid>
+      <description>Polls an IMAP inbox, parses ECO workflow emails, creates DingTalk To-Do tasks, and ensures idempotency.</description>
+    </item>
+    <item>
+      <title>Auto Load-Off Test</title>
+      <link>https://lishehao-ctrl.github.io/projects/auto-load-off-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/projects/auto-load-off-test/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Auto Load-Off Test is a Python-based hardware test automation tool designed to
+replace repetitive manual load-off testing workflows in lab environments.&lt;/p&gt;
+&lt;p&gt;The system automates signal generation, measurement, data logging, and result
+visualization, significantly improving test efficiency and consistency.&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Manual load-off testing requires repeated configuration of test instruments,
+data recording, and plotting, which is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Time-consuming&lt;/li&gt;
+&lt;li&gt;Error-prone&lt;/li&gt;
+&lt;li&gt;Hard to reproduce consistently&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;I designed and implemented an end-to-end automated testing pipeline that:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DingTalk To-Do Creator from Email</title>
+      <link>https://lishehao-ctrl.github.io/projects/test-automation-multitimer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/projects/test-automation-multitimer/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;DingTalk To-Do Creator from Email polls an IMAP inbox, filters business emails by subject and date rules, extracts a small set of ECO fields from the message body, creates DingTalk To-Do tasks for configured recipients, and records processed &lt;code&gt;Message-ID&lt;/code&gt;s in a local JSON file to keep runs idempotent.&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Manually converting qualifying ECO workflow emails into DingTalk To-Do tasks is repetitive and commonly leads to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Duplicate task creation across repeated mailbox scans&lt;/li&gt;
+&lt;li&gt;Missed follow-ups when emails arrive in bursts&lt;/li&gt;
+&lt;li&gt;Inconsistent extraction of key fields from email bodies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;This project implements a minimal automation pipeline that:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub Issues to DingTalk</title>
+      <link>https://lishehao-ctrl.github.io/projects/github-issues-to-dingtalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/projects/github-issues-to-dingtalk/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;A lightweight automation tool that synchronizes GitHub Issues activity to
+DingTalk, enabling teams to receive real-time updates without constantly
+monitoring GitHub.&lt;/p&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;In cross-platform teams, important issue updates are often missed due to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Notification overload&lt;/li&gt;
+&lt;li&gt;Context switching between tools&lt;/li&gt;
+&lt;li&gt;Delayed manual checking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;This project bridges GitHub Issues and DingTalk by automatically forwarding
+issue events to DingTalk, ensuring that key updates are visible to the entire team.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic issue event forwarding&lt;/li&gt;
+&lt;li&gt;Near real-time notifications&lt;/li&gt;
+&lt;li&gt;Simple configuration and deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;use-cases&#34;&gt;Use Cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Team issue tracking&lt;/li&gt;
+&lt;li&gt;Project status monitoring&lt;/li&gt;
+&lt;li&gt;Faster response to critical updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/lishehao-ctrl/github-issues-to-dingtalk&#34;&gt;https://github.com/lishehao-ctrl/github-issues-to-dingtalk&lt;/a&gt; (coming soon)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>
