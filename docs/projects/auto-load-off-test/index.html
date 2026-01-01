@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Auto Load-Off Test | Shehao Li</title>
 <meta name="keywords" content="Python, Test Automation, PyVISA, SCPI, Tkinter, Data Logging">
 <meta name="description" content="Python GUI that automates instrument-driven test runs: configures devices via SCPI/PyVISA, executes repeatable sweeps, logs results, and generates plots.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/projects/auto-load-off-test/">
+<link rel="canonical" href="https://lishehao-ctrl.github.io/projects/auto-load-off-test/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://lishehao-ctrl.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lishehao-ctrl.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lishehao-ctrl.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lishehao-ctrl.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lishehao-ctrl.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/auto-load-off-test/">
+<link rel="alternate" hreflang="en" href="https://lishehao-ctrl.github.io/projects/auto-load-off-test/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,79 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://lishehao-ctrl.github.io/projects/auto-load-off-test/">
+  <meta property="og:site_name" content="Shehao Li">
+  <meta property="og:title" content="Auto Load-Off Test">
+  <meta property="og:description" content="Python GUI that automates instrument-driven test runs: configures devices via SCPI/PyVISA, executes repeatable sweeps, logs results, and generates plots.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Test Automation">
+    <meta property="article:tag" content="PyVISA">
+    <meta property="article:tag" content="SCPI">
+    <meta property="article:tag" content="Tkinter">
+    <meta property="article:tag" content="Data Logging">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Auto Load-Off Test">
+<meta name="twitter:description" content="Python GUI that automates instrument-driven test runs: configures devices via SCPI/PyVISA, executes repeatable sweeps, logs results, and generates plots.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://lishehao-ctrl.github.io/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Auto Load-Off Test",
+      "item": "https://lishehao-ctrl.github.io/projects/auto-load-off-test/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Auto Load-Off Test",
+  "name": "Auto Load-Off Test",
+  "description": "Python GUI that automates instrument-driven test runs: configures devices via SCPI/PyVISA, executes repeatable sweeps, logs results, and generates plots.",
+  "keywords": [
+    "Python", "Test Automation", "PyVISA", "SCPI", "Tkinter", "Data Logging"
+  ],
+  "articleBody": "Overview Auto Load-Off Test is a Python-based test automation tool that replaces a repetitive “configure instruments → run sweep → record data → plot results” workflow with a single, repeatable run. It provides a GUI for configuring a test, drives lab instruments programmatically, collects measurements, and produces structured outputs for review.\nProblem A manual test run typically involves repeatedly:\nSetting instrument parameters and keeping them consistent across runs Executing the same sweep procedure and timing each step correctly Recording measurements and organizing files for later comparison Regenerating plots when parameters change This is time-consuming, easy to make inconsistent, and difficult to reproduce exactly.\nSolution This project implements an end-to-end automation pipeline that:\nEncodes test configuration as explicit inputs (rather than “remembered” instrument settings) Runs sweeps automatically with deterministic step order Captures measurements and timestamps in a structured format Generates plots and saves artifacts for later analysis Architecture GUI (Tkinter): test configuration, run control, and status/log display Device abstraction layer: instrument interfaces separated from the UI Transport + protocol: SCPI commands over VISA sessions (PyVISA) Outputs: logged data files and plots generated from the same captured dataset Tech Stack Python Tkinter PyVISA (VISA session management) SCPI (instrument command protocol) multi-threading (UI responsiveness during runs) Matplotlib (plotting) NumPy (data handling) What makes this project non-trivial Treating a lab “procedure” as a software pipeline: inputs → deterministic execution → reproducible outputs Separating UI concerns from instrument control so devices can be swapped/extended with minimal changes Managing long-running sweeps without losing logs/data and keeping run artifacts consistent Links GitHub: https://github.com/lishehao-ctrl/auto-load-off-test ",
+  "wordCount" : "256",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lishehao-ctrl.github.io/projects/auto-load-off-test/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shehao Li",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lishehao-ctrl.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Shehao Li (Alt + H)">Shehao Li</a>
+            <a href="https://lishehao-ctrl.github.io/" accesskey="h" title="Shehao Li (Alt + H)">Shehao Li</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,17 +168,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://lishehao-ctrl.github.io/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://lishehao-ctrl.github.io/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/projects/" title="Projects">
+                <a href="https://lishehao-ctrl.github.io/projects/" title="Projects">
                     <span>Projects</span>
                 </a>
             </li>
@@ -183,19 +249,19 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
-      <li><a href="http://localhost:1313/tags/test-automation/">Test Automation</a></li>
-      <li><a href="http://localhost:1313/tags/pyvisa/">PyVISA</a></li>
-      <li><a href="http://localhost:1313/tags/scpi/">SCPI</a></li>
-      <li><a href="http://localhost:1313/tags/tkinter/">Tkinter</a></li>
-      <li><a href="http://localhost:1313/tags/data-logging/">Data Logging</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/python/">Python</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/test-automation/">Test Automation</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/pyvisa/">PyVISA</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/scpi/">SCPI</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/tkinter/">Tkinter</a></li>
+      <li><a href="https://lishehao-ctrl.github.io/tags/data-logging/">Data Logging</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Shehao Li</a></span> · 
+        <span>&copy; 2026 <a href="https://lishehao-ctrl.github.io/">Shehao Li</a></span> · 
 
     <span>
         Powered by
