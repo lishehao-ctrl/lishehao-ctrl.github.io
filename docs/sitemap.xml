@@ -2,22 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://lishehao-ctrl.github.io/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://lishehao-ctrl.github.io/projects/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://lishehao-ctrl.github.io/tags/automation/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/auto-load-off-test/</loc>
+    <loc>https://lishehao-ctrl.github.io/tags/dingtalk/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/github-issues-to-dingtalk/</loc>
+    <loc>https://lishehao-ctrl.github.io/projects/mail-to-dingtalk-todo/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/mail-to-dingtalk-todo/</loc>
+    <loc>https://lishehao-ctrl.github.io/tags/imap/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/test-automation-multitimer/</loc>
+    <loc>https://lishehao-ctrl.github.io/tags/python/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://lishehao-ctrl.github.io/tags/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://lishehao-ctrl.github.io/about/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/alibabacloud-sdk/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/projects/auto-load-off-test/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/categories/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/devops/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/projects/test-automation-multitimer/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/dotenv/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/email-parsing/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/projects/github-issues-to-dingtalk/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/hardware-validation/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/integration/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/json/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/oauth2/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/scpi/</loc>
+  </url><url>
+    <loc>https://lishehao-ctrl.github.io/tags/test-automation/</loc>
   </url>
 </urlset>

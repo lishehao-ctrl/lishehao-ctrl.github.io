@@ -2,115 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on </title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://lishehao-ctrl.github.io/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lishehao-ctrl.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
+      <link>https://lishehao-ctrl.github.io/tags/automation/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>DingTalk</title>
-      <link>http://localhost:1313/tags/dingtalk/</link>
+      <link>https://lishehao-ctrl.github.io/tags/dingtalk/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dingtalk/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/dingtalk/</guid>
       <description></description>
     </item>
     <item>
       <title>IMAP</title>
-      <link>http://localhost:1313/tags/imap/</link>
+      <link>https://lishehao-ctrl.github.io/tags/imap/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/imap/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/imap/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://lishehao-ctrl.github.io/tags/python/</link>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>AlibabaCloud SDK</title>
-      <link>http://localhost:1313/tags/alibabacloud-sdk/</link>
+      <link>https://lishehao-ctrl.github.io/tags/alibabacloud-sdk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/alibabacloud-sdk/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/alibabacloud-sdk/</guid>
       <description></description>
     </item>
     <item>
       <title>DevOps</title>
-      <link>http://localhost:1313/tags/devops/</link>
+      <link>https://lishehao-ctrl.github.io/tags/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Dotenv</title>
-      <link>http://localhost:1313/tags/dotenv/</link>
+      <link>https://lishehao-ctrl.github.io/tags/dotenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dotenv/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/dotenv/</guid>
       <description></description>
     </item>
     <item>
       <title>Email Parsing</title>
-      <link>http://localhost:1313/tags/email-parsing/</link>
+      <link>https://lishehao-ctrl.github.io/tags/email-parsing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/email-parsing/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/email-parsing/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware Validation</title>
-      <link>http://localhost:1313/tags/hardware-validation/</link>
+      <link>https://lishehao-ctrl.github.io/tags/hardware-validation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hardware-validation/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/hardware-validation/</guid>
       <description></description>
     </item>
     <item>
       <title>Integration</title>
-      <link>http://localhost:1313/tags/integration/</link>
+      <link>https://lishehao-ctrl.github.io/tags/integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/integration/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/integration/</guid>
       <description></description>
     </item>
     <item>
       <title>JSON</title>
-      <link>http://localhost:1313/tags/json/</link>
+      <link>https://lishehao-ctrl.github.io/tags/json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/json/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/json/</guid>
       <description></description>
     </item>
     <item>
       <title>OAuth2</title>
-      <link>http://localhost:1313/tags/oauth2/</link>
+      <link>https://lishehao-ctrl.github.io/tags/oauth2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/oauth2/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/oauth2/</guid>
       <description></description>
     </item>
     <item>
       <title>SCPI</title>
-      <link>http://localhost:1313/tags/scpi/</link>
+      <link>https://lishehao-ctrl.github.io/tags/scpi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scpi/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/scpi/</guid>
       <description></description>
     </item>
     <item>
       <title>Test Automation</title>
-      <link>http://localhost:1313/tags/test-automation/</link>
+      <link>https://lishehao-ctrl.github.io/tags/test-automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/test-automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/testing/</guid>
+      <guid>https://lishehao-ctrl.github.io/tags/test-automation/</guid>
       <description></description>
     </item>
   </channel>
