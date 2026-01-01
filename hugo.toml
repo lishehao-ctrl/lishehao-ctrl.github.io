@@ -1,0 +1,3 @@
+theme = "PaperMod"
+publishDir = "docs"
+baseURL = "https://lishehao-ctrl.github.io/"

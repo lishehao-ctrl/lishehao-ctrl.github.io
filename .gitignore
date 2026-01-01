@@ -1,0 +1,14 @@
+# secrets
+.env
+
+# runtime state
+processed_messages.json
+__pycache__/
+*.pyc
+
+# venv
+.venv/
+venv/
+
+# OS
+.DS_Store
