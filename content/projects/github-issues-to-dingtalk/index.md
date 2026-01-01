@@ -1,6 +1,8 @@
 ---
 title: "GitHub Issues to DingTalk"
+summary: "Forwards GitHub Issues events to DingTalk to keep teams updated in near real time without manually checking GitHub."
 tags: ["Automation", "DevOps", "Integration"]
+weight: 30
 ---
 
 ## Overview

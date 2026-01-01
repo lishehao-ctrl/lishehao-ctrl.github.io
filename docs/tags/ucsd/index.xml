@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>UCSD on </title>
-    <link>https://lishehao-ctrl.github.io/tags/ucsd/</link>
-    <description>Recent content in UCSD on </description>
+    <title>UCSD on Shehao Li</title>
+    <link>http://localhost:1313/tags/ucsd/</link>
+    <description>Recent content in UCSD on Shehao Li</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lishehao-ctrl.github.io/tags/ucsd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ucsd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://lishehao-ctrl.github.io/about/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://lishehao-ctrl.github.io/about/</guid>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
       <description>Background, focus areas, and links for Shehao Li.</description>
     </item>
   </channel>

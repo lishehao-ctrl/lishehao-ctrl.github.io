@@ -1,22 +1,25 @@
 ---
 title: "DingTalk To-Do Creator from Email"
-date: 2025-12-31
-summary: "Polls an IMAP inbox, parses ECO workflow emails, creates DingTalk To-Do tasks, and ensures idempotency."
-tags: ["Python", "IMAP", "DingTalk", "Automation"]
+summary: "Converts structured workflow emails into actionable tasks in an enterprise collaboration platform by polling IMAP, extracting ECO fields, creating To-Dos, and enforcing idempotency."
+tags: ["Python", "IMAP", "Email Parsing", "Workflow Automation", "DingTalk"]
+weight: 20
 ---
 
 ## Overview
-DingTalk To-Do Creator from Email is a Python utility that reads emails from an IMAP inbox, extracts a small set of ECO-related fields from matching messages, creates DingTalk To-Do tasks for configured assignees, and stores processed Message-IDs in a local JSON file to prevent duplicate task creation.
+DingTalk To-Do Creator from Email is a Python automation utility that monitors an IMAP mailbox for ECO workflow emails and converts them into assigned To-Do items in an enterprise collaboration platform (DingTalk). It extracts a small set of structured fields from each qualifying message, creates a task for configured assignees, and records processed `Message-ID`s to prevent duplicates across repeated scans.
 
 ## Problem
-ECO workflow emails often require follow-up actions, but manually converting qualifying emails into DingTalk To-Do items is repetitive and easy to duplicate when the mailbox is scanned repeatedly or when runs overlap.
+Operational workflow emails often encode “work to be done,” but that work stays trapped in the inbox. In practice this leads to:
+- Manual copy/paste of key fields into a task system
+- Duplicate task creation when the mailbox is scanned repeatedly or runs overlap
+- Inconsistent extraction of required identifiers and owners from email bodies
 
 ## Solution
-This project implements a small automation pipeline that:
+This project implements a small email-to-task pipeline that:
 - Pulls recent emails from IMAP within a bounded date window
-- Filters messages by subject keyword and Message-ID deduplication
+- Filters messages by subject keyword and `Message-ID` deduplication
 - Extracts required ECO fields from the message body
-- Creates DingTalk To-Do tasks for configured recipients
+- Creates To-Do tasks for configured recipients
 - Persists processed state locally to keep runs idempotent
 
 ## Architecture
@@ -26,7 +29,7 @@ This project implements a small automation pipeline that:
   - Retries up to 3 times with exponential backoff
 - Parsing + filtering (`mailparser`)
   - Parses raw bytes into `EmailMessage`
-  - Filters by required subject keyword and processed Message-ID state
+  - Filters by required subject keyword and processed `Message-ID` state
   - Extracts body fields via regex from `text/plain` or `text/html` (HTML is converted to text via BeautifulSoup)
 - DingTalk integration (`dingtalk`)
   - Retrieves app access token via Alibaba Cloud DingTalk OAuth2 SDK
@@ -50,8 +53,8 @@ This project implements a small automation pipeline that:
   - To-Do API (`alibabacloud-dingtalk`)
 
 ## Impact
-- Reduces repeated manual work by generating DingTalk To-Dos directly from qualifying emails.
-- Prevents duplicate task creation across repeated inbox scans via Message-ID tracking.
+- Converts inbox-based workflow notifications into assigned tasks with consistent field extraction.
+- Prevents duplicate task creation across repeated inbox scans via `Message-ID` tracking.
 - Centralizes configuration and validates required inputs early to avoid silent failures.
 
 ## Links

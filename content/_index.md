@@ -2,7 +2,7 @@
 
 Math-CS @ UCSD.  
 Interested in Machine Learning & Software Engineering.  
-GitHub: [shehaoli](https://github.com/lishehao-ctrl)
+[GitHub](https://github.com/lishehao-ctrl)
 
 ### Projects
 - [Auto Load-Off Test](/projects/auto-load-off-test/)
