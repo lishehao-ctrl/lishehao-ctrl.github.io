@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Software Engineering on Shehao Li</title>
+    <link>https://lishehao-ctrl.github.io/tags/software-engineering/</link>
+    <description>Recent content in Software Engineering on Shehao Li</description>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>en</language>
+    <atom:link href="https://lishehao-ctrl.github.io/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://lishehao-ctrl.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lishehao-ctrl.github.io/about/</guid>
+      <description>Background, focus areas, and links for Shehao Li.</description>
+    </item>
+  </channel>
+</rss>

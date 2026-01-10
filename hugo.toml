@@ -26,11 +26,16 @@ title = "Shehao Li"
   ShowPostTags = false
 
   [params.profileMode]
-    enabled = false
+    enabled = true
     title = "Shehao (Oliver) Li"
     subtitle = "Math-CS @ UCSD.\nInterested in Machine Learning & Software Engineering."
+    imageUrl = "images/shehao_homepage.jpg"
+    imageWidth = 200
+    imageHeight = 200
+    imageTitle = "me"
 
   [params.label]
     text = "Shehao Li"
     icon = ""
     iconHeight = 18
+
